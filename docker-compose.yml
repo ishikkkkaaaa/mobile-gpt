@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  mobilegpt:
+    image: mobilegpt
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
