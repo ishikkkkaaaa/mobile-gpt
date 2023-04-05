@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="dashboard">
+		<div class="status">
+			<h2>Bot Eye View</h2>
+			<p>Battery Level: <span id="battery-level">100%</span></p>
+			<button id="autonomous-mode">Autonomous Mode</button>
+			<button id="manual-mode">Manual Mode</button>
+		</div>
+		<div class="controls">
+			<h2>Controls</h2>
+			<button id="forward">Forward</button>
+			<button id="backward">Backward</button>
+			<button id="left">Left</button>
+			<button id="right">Right</button>
+			<button id="stop">Stop</button>
+		</div>
+		<div class="logs">
+			<h2>Logs</h2>
+			<ul id="log-list">
+				<li>Robot started</li>
+			</ul>
+		</div>
+		<div class="modes">
+			<h2>Modes</h2>
+			<button id="surveillance-mode">Surveillance Mode</button>
+		</div>
+	</div>
+
+	<div class="surveillance-mode">
+		<div class="camera-container">
+			<img src="surveillance-camera.png" alt="Surveillance Camera" id="camera">
+			<button id="rotate-left">Rotate Left</button>
+			<button id="rotate-right">Rotate Right</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
