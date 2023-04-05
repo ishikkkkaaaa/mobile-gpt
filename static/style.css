@@ -1,0 +1,124 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Dashboard styles */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.status, .controls, .logs, .modes {
+    flex-basis: 25%;
+    margin: 10px;
+}
+
+.status, .modes {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.status h2, .modes h2 {
+    margin-top: 0;
+}
+
+.status p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.status button, .modes button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+.controls, .logs {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.controls button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logs ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.logs li {
+    padding: 10px;
+    border-bottom: 1px solid #d51616;
+}
+
+/* Surveillance mode styles */
+.surveillance-mode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #000;
+}
+
+.camera-container {
+    position: relative;
+    height: 100%;
+}
+
+#camera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.camera-container button {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.camera-container button#rotate-left {
+    left: 20px;
+}
+
+.camera-container button#rotate-right {
+    right: 20px;
+}
